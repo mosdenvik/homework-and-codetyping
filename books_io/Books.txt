@@ -1,0 +1,7 @@
+Bruce Eckel;Thinking In Java;2009
+Herbert Schildt;The Complete Reference;2015
+Kathy Sierra;Head First Java;2012
+Mark Grand;Patterns in Java;2004
+Yakov Fain;Java Programming 24-Hour Trainer;2001
+Blinov;Java Methods Programming;2004
+King;Horror;1999
