@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Create audiotrack</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="audiotracks" method="GET">
+            <input type="hidden" name="method" value="create"/>
+            Name:<br>
+            <input type="text" name="name">
+            <br>
+            Author ID:<br>
+            <input type="text" name="authorId">
+            <br>
+            Duration:<br>
+            <input type="text" name="duration">
+            <br>
+            Price:<br>
+            <input type="text" name="price">
+            <br>
+            Genre ID:<br>
+            <input type="text" name="genreId">
+            <br>
+            <br>
+            <input type="submit" value="Save">
+        </form>
+    </body>
+</html>
