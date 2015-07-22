@@ -22,7 +22,7 @@ public class AuthorDAO implements AbstractDAO<Author>{
 		this.connection = connection;
 		this.statement = statement;
 		String query = "CREATE TABLE IF NOT EXISTS `author` (" + 
-				"`id` INT unsigned NOT NULL AUTO_INCREMENT," +
+				"`id` INT(10) NOT NULL AUTO_INCREMENT," +
 				"`first_name` varchar(20) DEFAULT NULL," + 
 				"`last_name` varchar(50) DEFAULT NULL," + 
 				"`age` INT DEFAULT NULL," + 

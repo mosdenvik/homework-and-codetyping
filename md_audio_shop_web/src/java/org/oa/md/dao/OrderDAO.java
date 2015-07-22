@@ -28,7 +28,7 @@ public class OrderDAO implements AbstractDAO<Order>{
 		this.statement = statement;
 		this.connection = connection;
 		String query = "CREATE TABLE IF NOT EXISTS `order` (" + 
-				"`id` bigint(20) unsigned NOT NULL AUTO_INCREMENT," + 
+				"`id` INT(20) unsigned NOT NULL AUTO_INCREMENT," + 
 				"`order_status` VARCHAR(50) DEFAULT NULL," +
 				"`order_date` VARCHAR(50) DEFAULT NULL," +
 				"`manager_name` VARCHAR(50) DEFAULT NULL," +

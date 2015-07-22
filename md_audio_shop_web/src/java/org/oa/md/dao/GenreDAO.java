@@ -28,7 +28,7 @@ class GenreDAO implements AbstractDAO<Genre>{
 		this.statement = statement;
 		this.connection = connection;
 		String query = "CREATE TABLE IF NOT EXISTS `genre`  (" + 
-				"`id` bigint(20) unsigned NOT NULL AUTO_INCREMENT," +
+				"`id` INT(10) NOT NULL AUTO_INCREMENT," +
 				"`name` varchar(100) DEFAULT NULL," +
 				"PRIMARY KEY (`id`), UNIQUE KEY `id` (`id`)) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;";
 		try {

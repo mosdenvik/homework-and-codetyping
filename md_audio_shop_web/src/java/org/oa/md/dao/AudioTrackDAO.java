@@ -32,7 +32,10 @@ public class AudioTrackDAO implements AbstractDAO<AudioTrack>{
 				"`duration` TIME DEFAULT NULL," +
 				"`price` INT DEFAULT NULL," +
 				"`genre_id` INT DEFAULT NULL," + 
-				"PRIMARY KEY (`id`), UNIQUE KEY `id` (`id`)) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;";
+				"PRIMARY KEY (`id`), UNIQUE KEY `id` (`id`), " +
+                                "FOREIGN KEY (`author_id`) REFERENCES `author`(`id`)," +
+                                "FOREIGN KEY (`genre_id`) REFERENCES `genre`(`id`))" +
+                                "ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;";
 		try {
 			statement.execute(query);
 		} catch (SQLException e) {
